@@ -1,0 +1,134 @@
+.timeline-container {
+    // left: 240px;
+    left: 216px;
+    margin: auto;
+    // align-items: ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 20px;
+  
+    .timeline-sidebar {
+        top:-60px;
+      position: relative;
+      width: 50px;
+  
+      ul {
+        list-style-type: none;
+        padding: 0;
+        position: relative;
+      }
+  
+      ul::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 0;
+        width: 4px;
+        background-color: #ddd; /* Default color for the line */
+        z-index: 0;
+      }
+  
+      li {
+        position: relative;
+        margin: 130px 0;
+        cursor: pointer;
+
+  
+        .circle {
+          visibility: hidden;
+          position: relative;
+          width: 30px;
+          height: 30px;
+          background-color: white;
+          border-radius: 50%;
+          border: 2px solid #ddd; /* Default border color */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          z-index: 1;
+          transition: border-color 0.3s ease;
+        }
+  
+        &.active .circle {
+          border-color: #ffd700; /* Golden color for active step */
+        }
+  
+        &.active ~  {
+          background-color: #ffd700; /* Golden color for the line up to the active step */
+        }
+      }
+  
+      li::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 0;
+        width: 4px;
+        height: 170px;
+        background-color:#ddd;
+        z-index: 0;
+      }
+  
+      li.active::before {
+        background-color: #ffd700; /* Golden color for the line between active steps */
+      }
+    }
+  
+    .timeline-content {
+      .content {
+        position: relative;
+        // margin-left: 12px;
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+       
+        &:nth-child(odd) {
+            align-items: flex-start;
+        }
+        
+        &:nth-child(even) {
+              align-items: flex-end;
+            position: relative;
+            right:480px;
+          }
+        h1 {
+          position: relative;
+          font-size: 20px;
+          line-height: 30px;
+          font-weight: 600;
+          background: #d7d7d7; /* Background for h1 */
+          border-radius: 54px;
+          width: 33px;
+          height: 33px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+  
+        span {
+          font-size: 18px;
+          line-height: 27px;
+          font-weight: 600;
+          margin: 0 0; /* Adjust margin if needed */
+        }
+  
+        p {
+          font-size: 16px;
+          line-height: 26px;
+          font-weight: 400;
+          margin-left: 0px; /* Adjust margin for paragraph */
+        }
+      }
+    }
+  }
+  
+  .how-work{
+    display: flex;
+    align-items: center;
+    margin: 24px 0;
+    font-size: 32px;
+    line-height: 48px;
+    font-weight: 600;
+  }

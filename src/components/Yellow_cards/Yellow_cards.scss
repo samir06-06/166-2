@@ -1,0 +1,52 @@
+@import "../../variables.scss";
+.yellow-main, .yellow-sub,.sub-sub{
+    display: flex;
+    justify-content: space-between;
+    gap:24px;
+    width: 100%;
+}
+
+
+
+.sub-sub{
+    div{
+        height: 100%;
+
+    }
+    flex-direction: column;
+}
+.yellow-main{
+    height:408px;
+    margin-bottom: 120px;
+}
+
+.main-one{
+    h2{
+        position: absolute;
+        right:30px;
+        top: 30;
+    }
+    background-size:575px 338px !important;
+    background: url("../../assets/truck.png") no-repeat left bottom;
+}
+
+.yellow-card{
+    h2{
+        margin:0;
+        font-size: 32px;
+    }
+padding:30px;
+    button{
+        cursor: pointer;
+        border: none;
+        padding: 6px 30px;
+        border-radius: 8px;
+        position: absolute;
+        right:30px;
+        bottom:30px
+    }
+    width: 100%;
+    background-color: $first_color !important;
+    position: relative;
+   border-radius: 8px;
+}

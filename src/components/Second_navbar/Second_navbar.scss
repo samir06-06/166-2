@@ -1,0 +1,18 @@
+@import "../../variables.scss";
+.second-navbar{
+    display: flex;
+    justify-content: center;
+    gap:30px;
+    margin-bottom: 32px;
+    a{
+        padding:10px;
+        color: black;
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+
+    }
+    a:hover{
+        color:$first_color;
+        border-bottom: 1px solid $first_color;
+    }
+}

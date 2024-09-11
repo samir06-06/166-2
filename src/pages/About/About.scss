@@ -1,0 +1,108 @@
+@import "../../variables.scss";
+.home-png{
+    display: block;
+    margin-top: 25px ;
+    margin-bottom: 36px ;
+}
+#about{
+   
+    .about-card-1{
+        margin-bottom: 104px;
+        display: flex;
+        align-items: end;
+        width: 100%;
+        gap:24px;
+        p{
+            font-size: 16px;
+            line-height: 26px;
+            font-weight: 400;
+            color: #4C4C4C;
+            flex: 1;
+        }
+    }
+    .card-1-img{
+        flex: 1;
+        h1{
+            display: flex;
+            align-items: center;
+            margin: 24px 0;
+            font-size: 32px;
+            line-height: 48px;
+            font-weight: 600;
+        }
+        i{  display: block;
+            padding-bottom:28px;
+            font-size: 24px;
+            line-height: 36px;
+            font-weight:400;
+        }
+        .about-pic{
+            width: 100%;
+        }
+    }
+    .about-card-2{
+        display: flex;
+        
+        gap:24px;
+        .points{
+            
+            .point{
+                margin: 47px 0  47px 108px;
+                max-width: 400px;
+                margin-bottom: 52px;
+                h3{
+                    width: auto;
+                    // margin: 20px 0;
+                    font-size: 36px;
+                    line-height: 45px;
+                    font-weight: 600;
+                }
+                p{
+                    width: auto;
+
+                }
+
+            }
+            // text-align: center;
+            border-radius: 0 8px 8px 0;
+            flex: 1;
+            background: black;
+            color: white;
+    
+        }
+        .mission{
+            flex: 1;
+            h1{
+                display: flex;
+            align-items: center;
+            margin: 24px 0;
+            font-size: 32px;
+            line-height: 48px;
+            font-weight: 600;
+            }
+        }
+        .mission-icons{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 3 columns */
+    grid-template-rows: repeat(2, auto);  /* 2 rows */
+    gap:26px;
+            div{  
+                text-align: center; 
+                h5,p{
+                    margin: 0;
+                }
+                padding:47px 62px;         
+            border-radius: 8px;
+            border: 1px solid #EAEAEA;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            font-size: 18px;
+            line-height: 27px;
+            font-weight: 500;
+            }
+        }
+
+    }
+    
+}

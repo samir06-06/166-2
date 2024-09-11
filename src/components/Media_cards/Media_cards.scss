@@ -1,0 +1,43 @@
+@import "../../variables.scss";
+#media-card{
+    overflow: hidden;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    .media-pic{
+        img{
+            width: 100%;
+        }
+        flex: 1;
+        overflow: hidden;
+    }
+    .media-text{
+        display: flex;
+        flex-direction: column;
+        gap:5px;
+        // justify-content: space-between;
+        background: $second_color;
+        h5{
+            margin:0;
+            font-size: 14px;
+            line-height: 21px;
+            font-weight: 400;
+            color:#BFBFBF;
+        }
+        h4{
+            margin:0;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 27px;
+        }
+        p{
+            margin:0;
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: 400;
+            color:#989898;
+        }
+        // flex: 1;
+        padding:28px;
+    }
+}

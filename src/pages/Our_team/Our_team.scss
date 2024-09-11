@@ -1,0 +1,32 @@
+.team-grid-container {
+    display: grid;
+    margin-bottom: 120px;
+    grid-template-columns: repeat(3, 1fr); /* Creates a 3-column grid */
+    gap: 24px; /* Spacing between the cards */
+    .team-part{
+      h3{
+        margin: 6px 0;
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 500;
+        color: #111827;
+      }
+      p{
+        margin: 6px 0;
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 400;
+        color: #4C4C4C;
+      }
+    }
+    .team-img{
+      overflow: hidden;
+      border-radius: 8px;
+      border: 1px solid  #E5E5EA;
+      height: 430px;
+      width: 392px;
+      img{
+        width: 100%;
+      }
+    }
+  }

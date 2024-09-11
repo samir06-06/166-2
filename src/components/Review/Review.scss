@@ -1,0 +1,50 @@
+@import "../../variables.scss";
+#review{
+    border-radius: 8px;
+    padding: 24px;
+    width: 100%;
+    // background: rgba(0, 0, 0, 0.322);
+    color:black;
+    // background: red;
+    margin: 24px 0 !important;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.3); 
+
+}
+.slider-container {
+    height: 300px;
+    width: 100%;
+    overflow: hidden; 
+  }
+.img_num{
+    font-size: 14px;
+    font-weight: 400;
+    color:#989898;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 28px;
+}
+
+.stars{
+    color: $first_color;
+    i{
+        margin-right: 5px;
+    }
+}
+
+.rest{
+    p{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color:#989898;
+        padding-bottom: 24px;
+        border-bottom: 1px solid  #F2F2F2;
+    }
+    h4{
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22.59px;
+        color:$third_color;
+    }
+
+}

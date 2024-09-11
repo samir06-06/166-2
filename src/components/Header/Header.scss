@@ -1,0 +1,110 @@
+
+@import "../../variables.scss";
+.header-top, .header-bottom{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-top{
+    padding-top:14px;
+    padding-bottom:20px;
+}
+
+.header-bottom{
+    // padding:0 25px;
+    box-shadow: 0px 6px 10px -10px rgba(0,0,0,0.75);
+}
+
+    .customers {
+    border-radius: 8px;
+    // overflow: hidden;
+    box-shadow: 0 0 1px black;
+  
+    button {
+      cursor: pointer;
+      padding: 10px;
+      background: none; 
+      border: 1px solid transparent;  
+    }
+  }
+  
+  .selected {
+    border-radius: 8px;
+    color: $first_color; 
+    border: 1px solid $first_color !important;  
+  }
+  
+  .fa-chevron-down{
+    font-size: 10px;
+    margin-left:11px;
+  }
+  .header-top-right{
+    font-size: 14px;
+    line-height: 17.57px;
+    .online-payment{
+        i{
+            margin-right:6px;
+        }
+    }
+    justify-content: space-between;
+    gap:0 58px;
+    button{
+        border: none;
+        background:none;
+    }
+  }
+.header-top-right, .header-top, .header-bottom-buttons, .header-bottom{
+    display: flex;
+}
+.header-bottom-buttons{
+    gap:0 22px;
+    align-items: center;
+    a{
+        text-decoration: none;
+        color: black;
+        font-size: 14px;
+        line-height: 17.57px;
+    } 
+    .book{border: none;
+        border-radius: 8px;
+        padding:8px 10px;
+        display: flex;
+        align-items: center;
+        color:white;
+        background: $first_color;
+        img{
+            margin-right: 10px;
+            color: white;
+            width:24px;
+            display: inline-block;
+            // margin:0 10px;
+        }
+    }
+}
+.search{
+    padding: 0 16px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    background:  #FDFDFD;
+    border: 1px solid #F3F3F3;
+    color: #E4E4E4;
+    i{
+        font-size: 20px;
+        margin-right:16px;
+    }
+    input{
+        font-size: 18px;
+        line-height: 22.59px;
+        border: none;        
+        background: inherit;
+        &:focus{
+            outline: none;
+        }
+        &::placeholder{
+            color: #E4E4E4;
+
+        }
+    }
+}
